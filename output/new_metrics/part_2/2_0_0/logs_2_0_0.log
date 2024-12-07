@@ -1,0 +1,385 @@
+VERSION: 2.0.0
+
+Initial number of files in filtered_dataset: 4428
+Number of files in new_metrics_dataset: 2251
+Number of files of filtered_dataset not in new_metrics_dataset: 2122
+Number of files in the intersection of the two datasets: 2306
+
+Total number of .java files: 2306
+Number of files without bugs (no priority): 1802
+Number of files with Trivial or Minor priority: 36
+Number of files with Major priority: 421
+Number of files with Critical priority: 33
+Number of files with Blocker priority: 14
+Total number of files with priorities: 504
+Missing .java files in the filtered_dataset:
+    LlapDaemonProtocolClientProxy.java
+    QueryFileCleaner.java
+    Hadoop20SShims.java
+    HiveLimit.java
+
+Initial variable columns: 67
+
+Drop all NaN columns
+Remaining columns (67):
+    AvgCountLine
+    AvgCountLineBlank
+    AvgCountLineCode
+    AvgCountLineComment
+    AvgCyclomatic
+    AvgCyclomaticModified
+    AvgCyclomaticStrict
+    AvgEssential
+    CountClassBase
+    CountClassCoupled
+    CountClassDerived
+    CountDeclClass
+    CountDeclClassMethod
+    CountDeclClassVariable
+    CountDeclFunction
+    CountDeclInstanceMethod
+    CountDeclInstanceVariable
+    CountDeclMethod
+    CountDeclMethodDefault
+    CountDeclMethodPrivate
+    CountDeclMethodProtected
+    CountDeclMethodPublic
+    CountLine
+    CountLineBlank
+    CountLineCode
+    CountLineCodeDecl
+    CountLineCodeExe
+    CountLineComment
+    CountSemicolon
+    CountStmt
+    CountStmtDecl
+    CountStmtExe
+    MaxCyclomatic
+    MaxCyclomaticModified
+    MaxCyclomaticStrict
+    MaxInheritanceTree
+    PercentLackOfCohesion
+    RatioCommentToCode
+    SumCyclomatic
+    SumCyclomaticModified
+    SumCyclomaticStrict
+    SumEssential
+    CountInputMin
+    CountInputMean
+    CountInputMax
+    CountOutputMin
+    CountOutputMean
+    CountOutputMax
+    CountPathMin-divided-by-10,000
+    CountPathMean-divided-by-100,000
+    CountPathMax-divided-by-1,000,000
+    MaxNestingMin
+    MaxNestingMean
+    MaxNestingMax
+    NumberOfLinesAdded
+    NumberOfLinesRemoved
+    ChangedByNCommitsInCurrentVersion
+    ChangedByNCommitsInCurrentVersionAndPreviousVersions
+    BugsFixedInNCommits
+    AuthorsInCurrentVersion
+    AuthorsInCurrentAndPreviousVersions
+    AuthorsAvgExpertise
+    AuthorsMinExpertise
+    AvgCommitTimeForCurrentVersion
+    AvgCommitTimeForCurrentVersionAndPreviousVersions
+    ChangedComments
+    UnchangedComments
+Dropped all NaN columns (0):
+
+Columns with missing values:
+    AvgCountLine: 0
+    AvgCountLineBlank: 0
+    AvgCountLineCode: 0
+    AvgCountLineComment: 0
+    AvgCyclomatic: 0
+    AvgCyclomaticModified: 0
+    AvgCyclomaticStrict: 0
+    AvgEssential: 0
+    CountClassBase: 0
+    CountClassCoupled: 0
+    CountClassDerived: 0
+    CountDeclClass: 0
+    CountDeclClassMethod: 0
+    CountDeclClassVariable: 0
+    CountDeclFunction: 0
+    CountDeclInstanceMethod: 0
+    CountDeclInstanceVariable: 0
+    CountDeclMethod: 0
+    CountDeclMethodDefault: 0
+    CountDeclMethodPrivate: 0
+    CountDeclMethodProtected: 0
+    CountDeclMethodPublic: 0
+    CountLine: 0
+    CountLineBlank: 0
+    CountLineCode: 0
+    CountLineCodeDecl: 0
+    CountLineCodeExe: 0
+    CountLineComment: 0
+    CountSemicolon: 0
+    CountStmt: 0
+    CountStmtDecl: 0
+    CountStmtExe: 0
+    MaxCyclomatic: 0
+    MaxCyclomaticModified: 0
+    MaxCyclomaticStrict: 0
+    MaxInheritanceTree: 0
+    PercentLackOfCohesion: 0
+    RatioCommentToCode: 0
+    SumCyclomatic: 0
+    SumCyclomaticModified: 0
+    SumCyclomaticStrict: 0
+    SumEssential: 0
+    CountInputMin: 0
+    CountInputMean: 0
+    CountInputMax: 0
+    CountOutputMin: 0
+    CountOutputMean: 0
+    CountOutputMax: 0
+    CountPathMin-divided-by-10,000: 0
+    CountPathMean-divided-by-100,000: 0
+    CountPathMax-divided-by-1,000,000: 0
+    MaxNestingMin: 0
+    MaxNestingMean: 0
+    MaxNestingMax: 0
+    NumberOfLinesAdded: 0
+    NumberOfLinesRemoved: 0
+    ChangedByNCommitsInCurrentVersion: 0
+    ChangedByNCommitsInCurrentVersionAndPreviousVersions: 0
+    BugsFixedInNCommits: 0
+    AuthorsInCurrentVersion: 0
+    AuthorsInCurrentAndPreviousVersions: 0
+    AuthorsAvgExpertise: 0
+    AuthorsMinExpertise: 0
+    AvgCommitTimeForCurrentVersion: 0
+    AvgCommitTimeForCurrentVersionAndPreviousVersions: 0
+    ChangedComments: 0
+    UnchangedComments: 0
+Total rows with missing values removed: 0
+Total rows remaining: 2306
+
+Correlated columns to be dropped:
+    AvgCountLineBlank, correlated to: ['AvgCountLine']
+    AvgCountLineCode, correlated to: ['AvgCountLine']
+    AvgCyclomatic, correlated to: ['AvgCountLine', 'AvgCountLineCode']
+    AvgCyclomaticModified, correlated to: ['AvgCountLine', 'AvgCountLineCode', 'AvgCyclomatic']
+    AvgCyclomaticStrict, correlated to: ['AvgCountLine', 'AvgCountLineCode', 'AvgCyclomatic', 'AvgCyclomaticModified']
+    CountDeclClassMethod, correlated to: ['CountDeclClass']
+    CountDeclClassVariable, correlated to: ['CountDeclClass', 'CountDeclClassMethod']
+    CountDeclFunction, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable']
+    CountDeclInstanceMethod, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction']
+    CountDeclInstanceVariable, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod']
+    CountDeclMethod, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable']
+    CountDeclMethodDefault, correlated to: ['CountDeclClassMethod']
+    CountDeclMethodPrivate, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodDefault']
+    CountDeclMethodProtected, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodDefault', 'CountDeclMethodPrivate']
+    CountDeclMethodPublic, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected']
+    CountLine, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic']
+    CountLineBlank, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine']
+    CountLineCode, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank']
+    CountLineCodeDecl, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode']
+    CountLineCodeExe, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl']
+    CountLineComment, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodDefault', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe']
+    CountSemicolon, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment']
+    CountStmt, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon']
+    CountStmtDecl, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon', 'CountStmt']
+    CountStmtExe, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon', 'CountStmt', 'CountStmtDecl']
+    MaxCyclomaticModified, correlated to: ['MaxCyclomatic']
+    MaxCyclomaticStrict, correlated to: ['MaxCyclomatic', 'MaxCyclomaticModified']
+    SumCyclomatic, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon', 'CountStmt', 'CountStmtDecl', 'CountStmtExe']
+    SumCyclomaticModified, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon', 'CountStmt', 'CountStmtDecl', 'CountStmtExe', 'SumCyclomatic']
+    SumCyclomaticStrict, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon', 'CountStmt', 'CountStmtDecl', 'CountStmtExe', 'SumCyclomatic', 'SumCyclomaticModified']
+    SumEssential, correlated to: ['CountDeclClass', 'CountDeclClassMethod', 'CountDeclClassVariable', 'CountDeclFunction', 'CountDeclInstanceMethod', 'CountDeclInstanceVariable', 'CountDeclMethod', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountDeclMethodPublic', 'CountLine', 'CountLineBlank', 'CountLineCode', 'CountLineCodeDecl', 'CountLineCodeExe', 'CountLineComment', 'CountSemicolon', 'CountStmt', 'CountStmtDecl', 'CountStmtExe', 'SumCyclomatic', 'SumCyclomaticModified', 'SumCyclomaticStrict']
+    CountInputMean, correlated to: ['CountInputMin']
+    CountOutputMin, correlated to: ['CountInputMin']
+    CountOutputMean, correlated to: ['AvgCountLine', 'AvgCountLineBlank', 'AvgCountLineCode', 'CountOutputMin']
+    MaxNestingMin, correlated to: ['CountInputMin', 'CountOutputMin']
+    MaxNestingMean, correlated to: ['AvgCyclomaticModified', 'MaxNestingMin']
+    NumberOfLinesAdded, correlated to: ['CountDeclClassMethod', 'CountDeclMethodDefault', 'CountDeclMethodPrivate', 'CountDeclMethodProtected', 'CountLineComment']
+    ChangedByNCommitsInCurrentVersionAndPreviousVersions, correlated to: ['ChangedByNCommitsInCurrentVersion']
+    AuthorsInCurrentVersion, correlated to: ['ChangedByNCommitsInCurrentVersion', 'ChangedByNCommitsInCurrentVersionAndPreviousVersions']
+    AuthorsInCurrentAndPreviousVersions, correlated to: ['ChangedByNCommitsInCurrentVersion', 'ChangedByNCommitsInCurrentVersionAndPreviousVersions', 'AuthorsInCurrentVersion']
+    AuthorsMinExpertise, correlated to: ['AuthorsAvgExpertise']
+    ChangedComments, correlated to: ['NumberOfLinesAdded']
+    UnchangedComments, correlated to: ['ChangedByNCommitsInCurrentVersion', 'ChangedByNCommitsInCurrentVersionAndPreviousVersions', 'AuthorsInCurrentVersion', 'AuthorsInCurrentAndPreviousVersions']
+
+Remove outliers:
+    Initial number of rows in the filtered_dataset: 2306
+    Initial number of files without bugs (no priority): 1802
+    Initial number of files with Trivial or Minor priority: 36
+    Initial number of files with Major priority: 421
+    Initial number of files with Critical priority: 33
+    Initial number of files with Blocker priority: 14
+    Total initial number of files with priorities: 504
+    IQR_method n argument: 20
+    Total number of outliers is: 0
+    Final number of rows in the filtered_dataset: 2306
+    Final number of files without bugs (no priority): 1802
+    Final number of files with Trivial or Minor priority: 36
+    Final number of files with Major priority: 421
+    Final number of files with Critical priority: 33
+    Final number of files with Blocker priority: 14
+    Total Final number of files with priorities: 504
+
+Drop same value columns after outliers removal
+Initial columns: 24
+Remaining columns (24):
+    AvgCountLine
+    AvgCountLineComment
+    AvgEssential
+    CountClassBase
+    CountClassCoupled
+    CountClassDerived
+    CountDeclClass
+    MaxCyclomatic
+    MaxInheritanceTree
+    PercentLackOfCohesion
+    RatioCommentToCode
+    CountInputMin
+    CountInputMax
+    CountOutputMax
+    CountPathMin-divided-by-10,000
+    CountPathMean-divided-by-100,000
+    CountPathMax-divided-by-1,000,000
+    MaxNestingMax
+    NumberOfLinesRemoved
+    ChangedByNCommitsInCurrentVersion
+    BugsFixedInNCommits
+    AuthorsAvgExpertise
+    AvgCommitTimeForCurrentVersion
+    AvgCommitTimeForCurrentVersionAndPreviousVersions
+Dropped same value columns (0):
+
+Variables range:
+    AvgCountLine: 0.0 - 163.0
+    AvgCountLineComment: 0.0 - 38.0
+    AvgEssential: 0.0 - 12.0
+    CountClassBase: 0.0 - 3.3
+    CountClassCoupled: 0.0 - 137.0
+    CountClassDerived: 0.0 - 34.0
+    CountDeclClass: 1.0 - 2105.0
+    MaxCyclomatic: 0.0 - 90.0
+    MaxInheritanceTree: 0.0 - 8.0
+    PercentLackOfCohesion: 0.0 - 100.0
+    RatioCommentToCode: 0.0 - 9.7
+    CountInputMin: 0.0 - 40.0
+    CountInputMax: 0.0 - 371.0
+    CountOutputMax: 0.0 - 173.0
+    CountPathMin-divided-by-10,000: 0 - 136
+    CountPathMean-divided-by-100,000: 0 - 478
+    CountPathMax-divided-by-1,000,000: 0 - 1000
+    MaxNestingMax: 0.0 - 11.0
+    NumberOfLinesRemoved: 0 - 2573
+    ChangedByNCommitsInCurrentVersion: 1 - 170
+    BugsFixedInNCommits: 0 - 10
+    AuthorsAvgExpertise: 1 - 1462
+    AvgCommitTimeForCurrentVersion: 0 - 297
+    AvgCommitTimeForCurrentVersionAndPreviousVersions: 0 - 1959
+
+logistic_regression_clf best params: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 100, 'multi_class': 'deprecated', 'n_jobs': None, 'penalty': None, 'random_state': 42, 'solver': 'newton-cholesky', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+logistic_regression_clf coefficients: [-8.77748393e-04 -2.31473058e-01 -8.92231928e-01 -1.44576312e-01
+  3.82237129e-02 -3.83822509e-01 -9.13128093e-02  7.77373217e-02
+ -1.71027135e+00  2.23458220e-03 -4.48470324e-01 -6.83968110e-01
+  6.61783221e-03 -6.32923975e-03  5.65637993e-01 -3.51931118e-01
+  6.29140107e-03  4.18066211e-01 -2.64690416e-01 -1.27443320e-01
+  8.86175691e-01  1.47158681e-03  9.07770712e-03 -2.74583767e-03]
+logistic_regression_clf intercept_: -3.985707257469616
+
+Metrics coefficients:
+    AvgCountLine: -0.0008777483934790569
+    AvgCountLineComment: -0.23147305755436734
+    AvgEssential: -0.8922319276247624
+    CountClassBase: -0.14457631184374656
+    CountClassCoupled: 0.03822371293492497
+    CountClassDerived: -0.38382250850016
+    CountDeclClass: -0.09131280925548452
+    MaxCyclomatic: 0.07773732166027285
+    MaxInheritanceTree: -1.7102713540035765
+    PercentLackOfCohesion: 0.0022345821984644586
+    RatioCommentToCode: -0.448470324144
+    CountInputMin: -0.6839681098682892
+    CountInputMax: 0.006617832214401045
+    CountOutputMax: -0.006329239754002651
+    CountPathMin-divided-by-10,000: 0.5656379925190975
+    CountPathMean-divided-by-100,000: -0.35193111782568737
+    CountPathMax-divided-by-1,000,000: 0.0062914010718718265
+    MaxNestingMax: 0.4180662108621593
+    NumberOfLinesRemoved: -0.26469041599109955
+    ChangedByNCommitsInCurrentVersion: -0.12744331986051524
+    BugsFixedInNCommits: 0.8861756914017832
+    AuthorsAvgExpertise: 0.0014715868120870404
+    AvgCommitTimeForCurrentVersion: 0.009077707123982629
+    AvgCommitTimeForCurrentVersionAndPreviousVersions: -0.0027458376719339045
+
+Calculating scores for Blocker priority...
+    Blocker priority Logistic Regression Cross Validation Precision scores are: [0.38596491 0.64279801 0.45672106 0.48634223 0.28493506 0.61958874
+ 0.71280148 0.39787234 0.36742424 0.49433333]
+    Blocker priority Logistic Regression Average Cross Validation Precision score: 0.4848781421383136
+    Blocker priority Logistic Regression Cross Validation Precision standard deviation: 0.1362373488014117
+    Blocker priority Logistic Regression Cross Validation Recall scores are: [0.39221821 0.35879765 0.33980464 0.309133   0.29852677 0.29769404
+ 0.36765152 0.56722689 0.32289871 0.52505828]
+    Blocker priority Logistic Regression Average Cross Validation Recall score: 0.3779009687549896
+    Blocker priority Logistic Regression Cross Validation Recall standard deviation: 0.09434780668886746
+    Blocker priority Logistic Regression classifier performance:
+    Blocker priority precision: [0.       0.       0.6      0.812983 1.      ]
+    Blocker priority recall: [0.         0.         0.19047619 0.97227357 0.36363636]
+    Blocker priority fscore: [0.         0.         0.28915663 0.88552189 0.53333333]
+    Blocker priority support: [  4  10 126 541  11]
+
+    Blocker Logistic Regression AUC: 0.48619186046511625
+
+Calculating scores for Critical priority...
+    Critical priority Logistic Regression Cross Validation Precision scores are: [0.30543779 0.68117313 0.42598639 0.26985447 0.48242009 0.59121622
+ 0.47012987 0.31193568 0.29542484 0.58704391]
+    Critical priority Logistic Regression Average Cross Validation Precision score: 0.4420622390043313
+    Critical priority Logistic Regression Cross Validation Precision standard deviation: 0.14524798636071137
+    Critical priority Logistic Regression Cross Validation Recall scores are: [0.21802985 0.22507937 0.33885417 0.31961323 0.59111111 0.34167909
+ 0.22716404 0.28009524 0.44027586 0.33527559]
+    Critical priority Logistic Regression Average Cross Validation Recall score: 0.33171775381585855
+    Critical priority Logistic Regression Cross Validation Recall standard deviation: 0.114150076695683
+    Critical priority Logistic Regression classifier performance:
+    Critical priority precision: [0.       0.       0.6      0.812983 1.      ]
+    Critical priority recall: [0.         0.         0.19047619 0.97227357 0.36363636]
+    Critical priority fscore: [0.         0.         0.28915663 0.88552189 0.53333333]
+    Critical priority support: [  4  10 126 541  11]
+
+    Critical Logistic Regression AUC: 0.6978005865102639
+
+Calculating scores for Major priority...
+    Major priority Logistic Regression Cross Validation Precision scores are: [0.50462585 0.428      0.62662338 0.44923077 0.46827458 0.44
+ 0.72615694 0.35422222 0.37747748 0.31302211]
+    Major priority Logistic Regression Average Cross Validation Precision score: 0.468763333312629
+    Major priority Logistic Regression Cross Validation Precision standard deviation: 0.12518263233300342
+    Major priority Logistic Regression Cross Validation Recall scores are: [0.28820817 0.35131516 0.28036745 0.3961039  0.27674129 0.52341176
+ 0.4311     0.51530742 0.32921022 0.52255442]
+    Major priority Logistic Regression Average Cross Validation Recall score: 0.39143197957291354
+    Major priority Logistic Regression Cross Validation Recall standard deviation: 0.10175002309907395
+    Major priority Logistic Regression classifier performance:
+    Major priority precision: [0.       0.       0.6      0.812983 1.      ]
+    Major priority recall: [0.         0.         0.19047619 0.97227357 0.36363636]
+    Major priority fscore: [0.         0.         0.28915663 0.88552189 0.53333333]
+    Major priority support: [  4  10 126 541  11]
+
+    Major Logistic Regression AUC: 0.5066324527455269
+
+Calculating scores for Trivial or Minor priority...
+    Trivial or Minor priority Logistic Regression Cross Validation Precision scores are: [0.39251701 0.47162162 0.37885924 0.47897436 0.48423423 0.49977629
+ 0.43871367 0.32137601 0.56147959 0.63921053]
+    Trivial or Minor priority Logistic Regression Average Cross Validation Precision score: 0.46667625411994795
+    Trivial or Minor priority Logistic Regression Cross Validation Precision standard deviation: 0.09155498171343365
+    Trivial or Minor priority Logistic Regression Cross Validation Recall scores are: [0.3696497  0.54517509 0.35491276 0.42459677 0.41072632 0.2833102
+ 0.55247748 0.2985776  0.4273125  0.27233743]
+    Trivial or Minor priority Logistic Regression Average Cross Validation Recall score: 0.39390758523947994
+    Trivial or Minor priority Logistic Regression Cross Validation Recall standard deviation: 0.09920505375074842
+    Trivial or Minor priority Logistic Regression classifier performance:
+    Trivial or Minor priority precision: [0.       0.       0.6      0.812983 1.      ]
+    Trivial or Minor priority recall: [0.         0.         0.19047619 0.97227357 0.36363636]
+    Trivial or Minor priority fscore: [0.         0.         0.28915663 0.88552189 0.53333333]
+    Trivial or Minor priority support: [  4  10 126 541  11]
+
+    Trivial or Minor Logistic Regression AUC: 0.5108797223334668
+

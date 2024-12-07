@@ -1,20 +1,30 @@
 {
+  "1.2.0": {
+    "commit": "7f237de447bcd726bb3d0ba332cbb733f39fc02f",
+    "previous_version": null
+  },
   "2.0.0": {
-    "commit": "7f9f1fcb8697fb33f0edc2c391930a3728d247d7"
+    "commit": "7f9f1fcb8697fb33f0edc2c391930a3728d247d7",
+    "previous_version": "1.2.0"
   },
   "2.1.0": {
-    "commit": "e3cfeebcefe9a19c5055afdcbb00646908340694"
+    "commit": "9265bc24d75ac945bde9ce1a0999fddd8f2aae29",
+    "previous_version": "2.0.0"
   },
   "2.2.0": {
-    "commit": "da840b0f8fa99cab9f004810cd22abc207493cae"
+    "commit": "da840b0f8fa99cab9f004810cd22abc207493cae",
+    "previous_version": "2.1.0"
   },
   "2.3.0": {
-    "commit": "6f4c35c9e904d226451c465effdc5bfd31d395a0"
+    "commit": "6f4c35c9e904d226451c465effdc5bfd31d395a0",
+    "previous_version": "2.2.0"
   },
   "3.0.0": {
-    "commit": "ce61711a5fa54ab34fc74d86d521ecaeea6b072a"
+    "commit": "ce61711a5fa54ab34fc74d86d521ecaeea6b072a",
+    "previous_version": "2.3.0"
   },
   "3.1.0": {
-    "commit": "bcc7df95824831a8d2f1524e4048dfc23ab98c19"
+    "commit": "bcc7df95824831a8d2f1524e4048dfc23ab98c19",
+    "previous_version": "3.0.0"
   }
 }
