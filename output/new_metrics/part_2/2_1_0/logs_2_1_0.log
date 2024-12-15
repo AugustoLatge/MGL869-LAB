@@ -359,70 +359,98 @@ Metrics coefficients:
     ChangedComments: 0.011227019405871836
 
 Calculating scores for Blocker priority...
-    Blocker priority Logistic Regression Cross Validation Precision scores are: [0.45189951 0.39169215 0.26428571 0.23206326 0.3460961  0.62247706
- 0.22738095 0.3875     0.46346154 0.34138655]
-    Blocker priority Logistic Regression Average Cross Validation Precision score: 0.3728242844575683
-    Blocker priority Logistic Regression Cross Validation Precision standard deviation: 0.12102188159633874
-    Blocker priority Logistic Regression Cross Validation Recall scores are: [0.52027821 0.3057971  0.21521368 0.3120471  0.34318442 0.44592593
- 0.23406593 0.21697613 0.22346041 0.46605392]
-    Blocker priority Logistic Regression Average Cross Validation Recall score: 0.32830028322519345
-    Blocker priority Logistic Regression Cross Validation Recall standard deviation: 0.11338853509797711
+    Blocker priority Logistic Regression Cross Validation Precision scores are: [0.59724238 0.32083333 0.6786859  0.28948949 0.35411051 0.262
+ 0.33258929 0.23333333 0.21882001 0.24402908]
+    Blocker priority Logistic Regression Average Cross Validation Precision score: 0.3531133322438264
+    Blocker priority Logistic Regression Cross Validation Precision standard deviation: 0.15765351156170568
+    Blocker priority Logistic Regression Cross Validation Recall scores are: [0.31896552 0.32003546 0.25036364 0.25761905 0.21635025 0.24597701
+ 0.29329717 0.27389843 0.45234306 0.23067766]
+    Blocker priority Logistic Regression Average Cross Validation Recall score: 0.28595272437731845
+    Blocker priority Logistic Regression Cross Validation Recall standard deviation: 0.06807164794835822
     Blocker priority Logistic Regression classifier performance:
-    Blocker priority precision: [0.14285714 0.         0.5106383  0.80837004 0.        ]
-    Blocker priority recall: [0.14285714 0.         0.22222222 0.94344473 0.        ]
-    Blocker priority fscore: [0.14285714 0.         0.30967742 0.87069988 0.        ]
-    Blocker priority support: [  7   9 108 389   1]
+    Blocker priority precision: 0.29237309695646935
+    Blocker priority recall: 0.26170481903129716
+    Blocker priority fscore: 0.2646468887176039
+    Blocker priority support: None
 
     Blocker Logistic Regression AUC: 0.5812905043674275
 
+Blocker priority scores summary:
+    Blocker priority Logistic Regression Average Cross Validation Precision score: 35.3
+    Blocker priority Logistic Regression Average Cross Validation Recall score: 28.6
+    Blocker priority precision: 29.2
+    Blocker priority recall: 26.2
+    Blocker Logistic Regression AUC: 58.1
+
 Calculating scores for Critical priority...
-    Critical priority Logistic Regression Cross Validation Precision scores are: [0.25135135 0.28666667 0.34696262 0.32332854 0.29807692 0.25740741
- 0.40516143 0.36028037 0.49514019 0.53269231]
-    Critical priority Logistic Regression Average Cross Validation Precision score: 0.35570678017406987
-    Critical priority Logistic Regression Cross Validation Precision standard deviation: 0.09603101492992264
-    Critical priority Logistic Regression Cross Validation Recall scores are: [0.31200583 0.33536834 0.23040078 0.35157303 0.26555944 0.24810361
- 0.38851728 0.23672815 0.54090697 0.34577295]
-    Critical priority Logistic Regression Average Cross Validation Recall score: 0.3254936365578243
-    Critical priority Logistic Regression Cross Validation Recall standard deviation: 0.09324340046733685
+    Critical priority Logistic Regression Cross Validation Precision scores are: [0.39747706 0.43013468 0.80526316 0.28285714 0.4036864  0.27138365
+ 0.47390572 0.2565     0.28536797 0.3698489 ]
+    Critical priority Logistic Regression Average Cross Validation Precision score: 0.3976424679955127
+    Critical priority Logistic Regression Cross Validation Precision standard deviation: 0.16175400198914006
+    Critical priority Logistic Regression Cross Validation Recall scores are: [0.25555556 0.29954013 0.23101124 0.28714353 0.29076923 0.34075092
+ 0.26016566 0.30187747 0.25909677 0.43115218]
+    Critical priority Logistic Regression Average Cross Validation Recall score: 0.29570626851737736
+    Critical priority Logistic Regression Cross Validation Recall standard deviation: 0.05669216034036803
     Critical priority Logistic Regression classifier performance:
-    Critical priority precision: [0.14285714 0.         0.5106383  0.80837004 0.        ]
-    Critical priority recall: [0.14285714 0.         0.22222222 0.94344473 0.        ]
-    Critical priority fscore: [0.14285714 0.         0.30967742 0.87069988 0.        ]
-    Critical priority support: [  7   9 108 389   1]
+    Critical priority precision: 0.29237309695646935
+    Critical priority recall: 0.26170481903129716
+    Critical priority fscore: 0.2646468887176039
+    Critical priority support: None
 
     Critical Logistic Regression AUC: 0.6226622662266227
 
+Critical priority scores summary:
+    Critical priority Logistic Regression Average Cross Validation Precision score: 39.8
+    Critical priority Logistic Regression Average Cross Validation Recall score: 29.6
+    Critical priority precision: 29.2
+    Critical priority recall: 26.2
+    Critical Logistic Regression AUC: 62.3
+
 Calculating scores for Major priority...
-    Major priority Logistic Regression Cross Validation Precision scores are: [0.28513761 0.38652913 0.38787001 0.26820513 0.65797941 0.28576329
- 0.4278887  0.29260073 0.38762626 0.34855769]
-    Major priority Logistic Regression Average Cross Validation Precision score: 0.37281579708771523
-    Major priority Logistic Regression Cross Validation Precision standard deviation: 0.1146091186337136
-    Major priority Logistic Regression Cross Validation Recall scores are: [0.37828407 0.44557823 0.32708333 0.22749731 0.44129721 0.30688202
- 0.23825758 0.26445183 0.38344286 0.22904656]
-    Major priority Logistic Regression Average Cross Validation Recall score: 0.3241821011152828
-    Major priority Logistic Regression Cross Validation Recall standard deviation: 0.08468830953943014
+    Major priority Logistic Regression Cross Validation Precision scores are: [0.46233974 0.2959633  0.27809524 0.37454128 0.37227414 0.33207071
+ 0.60863095 0.25694683 0.45794393 0.35199176]
+    Major priority Logistic Regression Average Cross Validation Precision score: 0.37907978818283355
+    Major priority Logistic Regression Cross Validation Precision standard deviation: 0.10587137318296234
+    Major priority Logistic Regression Cross Validation Recall scores are: [0.21980519 0.3045977  0.31176471 0.3815995  0.33379121 0.32222222
+ 0.41826087 0.32853535 0.32771536 0.29956427]
+    Major priority Logistic Regression Average Cross Validation Recall score: 0.32478563820649253
+    Major priority Logistic Regression Cross Validation Recall standard deviation: 0.051972062137038824
     Major priority Logistic Regression classifier performance:
-    Major priority precision: [0.14285714 0.         0.5106383  0.80837004 0.        ]
-    Major priority recall: [0.14285714 0.         0.22222222 0.94344473 0.        ]
-    Major priority fscore: [0.14285714 0.         0.30967742 0.87069988 0.        ]
-    Major priority support: [  7   9 108 389   1]
+    Major priority precision: 0.29237309695646935
+    Major priority recall: 0.26170481903129716
+    Major priority fscore: 0.2646468887176039
+    Major priority support: None
 
     Major Logistic Regression AUC: 0.3728790366721402
 
+Major priority scores summary:
+    Major priority Logistic Regression Average Cross Validation Precision score: 37.9
+    Major priority Logistic Regression Average Cross Validation Recall score: 32.5
+    Major priority precision: 29.2
+    Major priority recall: 26.2
+    Major Logistic Regression AUC: 37.3
+
 Calculating scores for Trivial or Minor priority...
-    Trivial or Minor priority Logistic Regression Cross Validation Precision scores are: [0.68830275 0.36904762 0.22587719 0.45620629 0.28146789 0.25454545
- 0.37647799 0.3192402  0.38848039 0.34960087]
-    Trivial or Minor priority Logistic Regression Average Cross Validation Precision score: 0.3709246648967622
-    Trivial or Minor priority Logistic Regression Cross Validation Precision standard deviation: 0.13083312765864966
-    Trivial or Minor priority Logistic Regression Cross Validation Recall scores are: [0.29845506 0.27855787 0.39945652 0.26054159 0.3689759  0.24722838
- 0.27484472 0.3339372  0.54405989 0.42126967]
-    Trivial or Minor priority Logistic Regression Average Cross Validation Recall score: 0.3427326803324865
-    Trivial or Minor priority Logistic Regression Cross Validation Recall standard deviation: 0.09264538248689083
+    Trivial or Minor priority Logistic Regression Cross Validation Precision scores are: [0.25961538 0.24503753 0.34257715 0.45327103 0.46243448 0.32593458
+ 0.61263736 0.27425743 0.27292929 0.37328297]
+    Trivial or Minor priority Logistic Regression Average Cross Validation Precision score: 0.36219771980752913
+    Trivial or Minor priority Logistic Regression Cross Validation Precision standard deviation: 0.11682685552672668
+    Trivial or Minor priority Logistic Regression Cross Validation Recall scores are: [0.23937984 0.33719165 0.42218845 0.28316898 0.29910714 0.6170714
+ 0.29645635 0.29252525 0.23516287 0.24221491]
+    Trivial or Minor priority Logistic Regression Average Cross Validation Recall score: 0.32644668648806513
+    Trivial or Minor priority Logistic Regression Cross Validation Recall standard deviation: 0.11615292622725318
     Trivial or Minor priority Logistic Regression classifier performance:
-    Trivial or Minor priority precision: [0.14285714 0.         0.5106383  0.80837004 0.        ]
-    Trivial or Minor priority recall: [0.14285714 0.         0.22222222 0.94344473 0.        ]
-    Trivial or Minor priority fscore: [0.14285714 0.         0.30967742 0.87069988 0.        ]
-    Trivial or Minor priority support: [  7   9 108 389   1]
+    Trivial or Minor priority precision: 0.29237309695646935
+    Trivial or Minor priority recall: 0.26170481903129716
+    Trivial or Minor priority fscore: 0.2646468887176039
+    Trivial or Minor priority support: None
 
     Trivial or Minor Logistic Regression AUC: 0.9415204678362573
+
+Trivial or Minor priority scores summary:
+    Trivial or Minor priority Logistic Regression Average Cross Validation Precision score: 36.2
+    Trivial or Minor priority Logistic Regression Average Cross Validation Recall score: 32.6
+    Trivial or Minor priority precision: 29.2
+    Trivial or Minor priority recall: 26.2
+    Trivial or Minor Logistic Regression AUC: 94.2
 

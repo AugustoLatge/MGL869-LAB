@@ -458,7 +458,7 @@ def generate_final_project_part_2_model(current_version, recalculate_models=True
         logging.info(f'    {priority} priority Logistic Regression Cross Validation Recall standard deviation: {lr_recall_stdev}')
         lr_predicted = logistic_regression_clf.predict(X_test)
         lr_predicted_probs = logistic_regression_clf.predict_proba(X_test)
-        lr_precision, lr_recall, lr_fscore, lr_support = score(y_test, lr_predicted)
+        lr_precision, lr_recall, lr_fscore, lr_support = score(y_test, lr_predicted, average="macro")
         logging.info(f"    {priority} priority Logistic Regression classifier performance:")
         logging.info(f"    {priority} priority precision: {lr_precision}")
         logging.info(f"    {priority} priority recall: {lr_recall}")
@@ -470,6 +470,14 @@ def generate_final_project_part_2_model(current_version, recalculate_models=True
         lr_fpr, lr_tpr, lr_thresholds = roc_curve(y_test, lr_predicted_probs[:, 1], pos_label=priority)
         lr_auc = auc(lr_fpr, lr_tpr)
         logging.info(f"    {priority} Logistic Regression AUC: {lr_auc}")
+        logging.info("")
+
+        logging.info(f'{priority} priority scores summary:')
+        logging.info(f'    {priority} priority Logistic Regression Average Cross Validation Precision score: {round(lr_precision_score * 100, 1)}')
+        logging.info(f'    {priority} priority Logistic Regression Average Cross Validation Recall score: {round(lr_recall_score * 100, 1)}')
+        logging.info(f"    {priority} priority precision: {round(lr_precision * 100, 1)}")
+        logging.info(f"    {priority} priority recall: {round(lr_recall * 100, 1)}")
+        logging.info(f"    {priority} Logistic Regression AUC: {round(lr_auc * 100, 1)}")
         logging.info("")
 
         # Plot Logistic Regression ROC AUC
@@ -484,7 +492,7 @@ def generate_final_project_part_2_model(current_version, recalculate_models=True
             display = RocCurveDisplay.from_predictions(
                 y_onehot_test[:, class_id],
                 lr_predicted_probs[:, class_id],
-                name=f"{class_of_interest} vs the rest",
+                name=f"{class_of_interest} vs the rest - {dots_separated_current_version}",
                 color=colors[colors_index],
                 plot_chance_level=True,
             )
