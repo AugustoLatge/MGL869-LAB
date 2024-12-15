@@ -492,7 +492,7 @@ def generate_final_project_part_2_model(current_version, recalculate_models=True
             display = RocCurveDisplay.from_predictions(
                 y_onehot_test[:, class_id],
                 lr_predicted_probs[:, class_id],
-                name=f"{class_of_interest} vs the rest - {dots_separated_current_version}",
+                name=f"{class_of_interest} vs the rest",
                 color=colors[colors_index],
                 plot_chance_level=True,
             )
@@ -500,7 +500,7 @@ def generate_final_project_part_2_model(current_version, recalculate_models=True
             _ = display.ax_.set(
                 xlabel="False Positive Rate",
                 ylabel="True Positive Rate",
-                title=f"One-vs-Rest ROC curves:\n{priority} vs ({other_priorities})",
+                title=f"{dots_separated_current_version} - One-vs-Rest ROC curves:\n{priority} vs ({other_priorities})",
             )
             display.figure_.savefig(version_output_dir / f"{priority.lower()}_logistic_regression_auc_{current_version}.png")
         colors_index += 1
