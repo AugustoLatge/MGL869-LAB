@@ -333,36 +333,50 @@ Metrics coefficients:
     ChangedComments: -0.030430487137493325
 
 Calculating scores for Critical priority...
-    Critical priority Logistic Regression Cross Validation Precision scores are: [0.28666667 0.29166667 0.26143791 0.55978261 0.30666667 0.45744681
- 0.28571429 0.28666667 0.46       0.48958333]
-    Critical priority Logistic Regression Average Cross Validation Precision score: 0.3685631611417308
-    Critical priority Logistic Regression Cross Validation Precision standard deviation: 0.11003526297884698
-    Critical priority Logistic Regression Cross Validation Recall scores are: [0.38888889 0.33333333 0.48958333 0.47674419 0.5923913  0.41666667
- 0.48888889 0.33333333 0.5        0.47826087]
-    Critical priority Logistic Regression Average Cross Validation Recall score: 0.44980908044039997
-    Critical priority Logistic Regression Cross Validation Recall standard deviation: 0.08126495382275024
+    Critical priority Logistic Regression Cross Validation Precision scores are: [0.96       0.2875817  0.39583333 0.46527778 0.48958333 0.36594203
+ 0.2826087  0.45       0.29251701 0.45      ]
+    Critical priority Logistic Regression Average Cross Validation Precision score: 0.4439343875231252
+    Critical priority Logistic Regression Cross Validation Precision standard deviation: 0.1974089243727632
+    Critical priority Logistic Regression Cross Validation Recall scores are: [0.30952381 0.32608696 0.48863636 0.33333333 0.32608696 0.35656214
+ 0.5        0.47619048 0.57142857 0.65957447]
+    Critical priority Logistic Regression Average Cross Validation Recall score: 0.43474230722910806
+    Critical priority Logistic Regression Cross Validation Recall standard deviation: 0.12192952586826243
     Critical priority Logistic Regression classifier performance:
-    Critical priority precision: [0.         0.5        0.88785047]
-    Critical priority recall: [0.         0.04761905 0.9947644 ]
-    Critical priority fscore: [0.         0.08695652 0.9382716 ]
-    Critical priority support: [  4  21 191]
+    Critical priority precision: 0.46261682242990654
+    Critical priority recall: 0.347461148508269
+    Critical priority fscore: 0.34174270889246733
+    Critical priority support: None
 
     Critical Logistic Regression AUC: 0.7830188679245284
 
+Critical priority scores summary:
+    Critical priority Logistic Regression Average Cross Validation Precision score: 44.4
+    Critical priority Logistic Regression Average Cross Validation Recall score: 43.5
+    Critical priority precision: 46.3
+    Critical priority recall: 34.7
+    Critical Logistic Regression AUC: 78.3
+
 Calculating scores for Major priority...
-    Major priority Logistic Regression Cross Validation Precision scores are: [0.29166667 0.9        0.46598639 0.62585034 0.29333333 0.45918367
- 0.96938776 0.32624113 0.28666667 0.29251701]
-    Major priority Logistic Regression Average Cross Validation Precision score: 0.49108329714864685
-    Major priority Logistic Regression Cross Validation Precision standard deviation: 0.25885588664132186
-    Major priority Logistic Regression Cross Validation Recall scores are: [0.33333333 0.32608696 0.325      0.48958333 0.5719697  0.32575758
- 0.5625     0.5        0.47959184 0.37338501]
-    Major priority Logistic Regression Average Cross Validation Recall score: 0.428720774557027
-    Major priority Logistic Regression Cross Validation Recall standard deviation: 0.1021131776160033
+    Major priority Logistic Regression Cross Validation Precision scores are: [0.36702128 0.65333333 0.42156863 0.29251701 0.29861111 0.31292517
+ 0.29166667 0.59722222 0.45       0.48      ]
+    Major priority Logistic Regression Average Cross Validation Precision score: 0.4164865414250807
+    Major priority Logistic Regression Cross Validation Precision standard deviation: 0.12993996983970746
+    Major priority Logistic Regression Cross Validation Recall scores are: [0.38888889 0.31884058 0.33333333 0.33333333 0.41666667 0.32608696
+ 0.31884058 0.5        0.32478632 0.80141844]
+    Major priority Logistic Regression Average Cross Validation Recall score: 0.40621951026668884
+    Major priority Logistic Regression Cross Validation Recall standard deviation: 0.1506777289672057
     Major priority Logistic Regression classifier performance:
-    Major priority precision: [0.         0.5        0.88785047]
-    Major priority recall: [0.         0.04761905 0.9947644 ]
-    Major priority fscore: [0.         0.08695652 0.9382716 ]
-    Major priority support: [  4  21 191]
+    Major priority precision: 0.46261682242990654
+    Major priority recall: 0.347461148508269
+    Major priority fscore: 0.34174270889246733
+    Major priority support: None
 
     Major Logistic Regression AUC: 0.7682539682539682
+
+Major priority scores summary:
+    Major priority Logistic Regression Average Cross Validation Precision score: 41.6
+    Major priority Logistic Regression Average Cross Validation Recall score: 40.6
+    Major priority precision: 46.3
+    Major priority recall: 34.7
+    Major Logistic Regression AUC: 76.8
 
